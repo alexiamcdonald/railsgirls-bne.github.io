@@ -237,14 +237,18 @@ touch app/models/.keep
 touch app/views/.keep
 touch db/.keep
 touch files/.keep
+{% endhighlight %}
 
+NOTE: Cloud9 will sometimes hide files starting with a dot, but we need to see it.
+Click the "cog" icon in the upper right corner of the file explorer to open the Cloud9 preferences tab. Under `User Settings` select `Tree & Navigate` and removed the `.*` from the `hidden file patterns` options. If unsure ask an instructor.
+
+{% highlight sh %}
 git add .
 git commit -m "folder structure"
 git push origin master
 {% endhighlight %}
 
-Cloud9 will sometimes hide files starting with a dot, but we need to see it.
-Click the "cog" icon in the upper right corner of the file explorer to open the Cloud9 preferences tab. Under `User Settings` select `Tree & Navigate` and removed the `.*` from the `hidden file patterns` options. If unsure ask an instructor.
+
 
 ## *6.* Configure the App
 
