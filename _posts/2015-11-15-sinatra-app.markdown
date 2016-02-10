@@ -243,6 +243,9 @@ git commit -m "folder structure"
 git push origin master
 {% endhighlight %}
 
+Cloud9 will sometimes hide files starting with a dot, but we need to see it.
+Click the "cog" icon in the upper right corner of the file explorer to open the Cloud9 preferences tab. Under `User Settings` select `Tree & Navigate` and removed the `.*` from the `hidden file patterns` options. If unsure ask an instructor.
+
 ## *6.* Configure the App
 
 The first step is to set up the `application.rb` file. Double click on the file to open it (you will find it under the `config` folder). Take some time to understand what we are about to put into this file.
@@ -351,9 +354,6 @@ Create the `.gitignore` file using the Cloud9 file explorer or through terminal:
 {% highlight sh %}
 touch .gitignore
 {% endhighlight %}
-
-Cloud9 will sometimes hide files starting with a dot, but we need to see it.
-Click the "cog" icon in the upper right corner of the file explorer to open the Cloud9 preferences tab. Under `User Settings` select `Tree & Navigate` and removed the `.*` from the `hidden file patterns` options. If unsure ask an instructor.
 
 Open the `.gitignore` file and enter the following, to ignore all sqlite3 databases.
 {% highlight sh %}
